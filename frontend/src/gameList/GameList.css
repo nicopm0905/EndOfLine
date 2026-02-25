@@ -1,0 +1,78 @@
+.game-history-container {
+  background: linear-gradient(135deg, #0f1419 0%, #1a1f3a 100%);
+  padding: 2rem 3rem;
+  font-family: 'Orbitron', sans-serif;
+  min-height: 100vh;
+  color: #e0f7fa;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #00c8ff;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 2px;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #00c8ff;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #00c8ff;
+  padding-left: 1rem;
+}
+
+.empty-msg {
+  color: #888;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.games-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 3rem;
+  background-color: #121621;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 12px #00c8ff44;
+}
+
+.games-table th,
+.games-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #1f2633;
+}
+
+.games-table th {
+  background-color: #0d121b;
+  color: #00c8ff; 
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #00c8ff44;
+}
+
+.games-table td {
+  font-size: 0.95rem;
+  color: #e0f7fa;
+}
+
+.games-table tbody tr:hover {
+  background-color: #1c2738;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.games-table th:last-child,
+.games-table td:last-child {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.games-table + h3 {
+  margin-top: 5rem;
+}

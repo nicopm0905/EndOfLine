@@ -1,0 +1,212 @@
+.ranking-detail-wrapper {
+    padding: 2rem;
+    background: radial-gradient(circle at top, #1a2333, #070b15);
+    min-height: 100vh;
+    color: #e5f6ff;
+}
+
+.ranking-detail-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(16, 25, 40, 0.8);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 200, 255, 0.3);
+}
+
+.back-button {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(0, 200, 255, 0.15);
+    border: 1px solid rgba(0, 200, 255, 0.5);
+    border-radius: 10px;
+    color: #00c8ff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: rgba(0, 200, 255, 0.3);
+    transform: translateX(-3px);
+}
+
+.ranking-title-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ranking-title-icon {
+    font-size: 3rem;
+}
+
+.ranking-title {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.ranking-description {
+    font-size: 1.1rem;
+    color: rgba(229, 246, 255, 0.7);
+    margin: 0.5rem 0;
+}
+
+.ranking-count {
+    font-size: 0.95rem;
+    color: #00c8ff;
+    margin: 0.5rem 0 0 0;
+    font-weight: 600;
+}
+
+.ranking-table-container {
+    background: rgba(16, 25, 40, 0.8);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 200, 255, 0.25);
+    padding: 2rem;
+    overflow-x: auto;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ranking-table thead tr {
+    background: rgba(0, 200, 255, 0.15);
+    border-bottom: 2px solid rgba(0, 200, 255, 0.5);
+}
+
+.ranking-table th {
+    padding: 1.2rem;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #00c8ff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.ranking-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.ranking-table tbody tr:hover {
+    background: rgba(0, 200, 255, 0.1);
+    transform: scale(1.01);
+}
+
+.ranking-table tbody tr.current-player-row {
+    background: rgba(0, 200, 255, 0.25);
+    border: 2px solid #00c8ff;
+}
+
+.ranking-table tbody tr.current-player-row:hover {
+    background: rgba(0, 200, 255, 0.35);
+}
+
+.ranking-table td {
+    padding: 1.2rem;
+}
+
+.rank-col {
+    width: 15%;
+    text-align: center;
+}
+
+.player-col {
+    width: 55%;
+}
+
+.value-col {
+    width: 30%;
+    text-align: right;
+}
+
+.rank-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 200, 255, 0.2);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.player-username {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.you-badge {
+    padding: 0.3rem 0.8rem;
+    background: linear-gradient(135deg, #00c8ff, #00ffbf);
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.1rem;
+}
+
+.value-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.no-data-message {
+    text-align: center;
+    padding: 3rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .ranking-detail-wrapper {
+        padding: 1rem;
+    }
+    
+    .back-button {
+        position: static;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    
+    .ranking-title {
+        font-size: 1.8rem;
+    }
+    
+    .ranking-title-icon {
+        font-size: 2rem;
+    }
+    
+    .ranking-table th,
+    .ranking-table td {
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .player-username {
+        font-size: 0.95rem;
+    }
+    
+    .value-text {
+        font-size: 1.1rem;
+    }
+}

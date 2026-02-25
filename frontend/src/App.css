@@ -1,0 +1,51 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0b0a1f;
+}
+
+.app-main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.lobby-return-banner {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1200;
+  background: rgba(0, 0, 0, 0.85);
+  color: #f3f3f3;
+  border: 1px solid rgba(0, 200, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 220px;
+  max-width: 280px;
+}
+
+.lobby-return-banner__text {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.lobby-return-banner__button {
+  border: none;
+  border-radius: 999px;
+  background: #00c8ff;
+  color: #0b0a1f;
+  font-weight: 700;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.lobby-return-banner__button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 200, 255, 0.35);
+}

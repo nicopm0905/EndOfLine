@@ -1,0 +1,152 @@
+.statistics-wrapper {
+    padding: 2rem;
+    background: radial-gradient(circle at top, #1a2333, #070b15);
+    min-height: 100vh;
+    color: #e5f6ff;
+}
+
+.statistics-card {
+    background: rgba(16, 25, 40, 0.86);
+    border: 1px solid rgba(0, 200, 255, 0.25);
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    padding: 2.5rem;
+}
+
+.statistics-title {
+    text-transform: uppercase;
+    letter-spacing: 0.35rem;
+    text-align: center;
+    color: #00c8ff;
+    margin-bottom: 2rem;
+}
+
+.statistics-table thead,
+.statistics-table th 
+
+.statistics-table tbody tr {
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.statistics-cards {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+    justify-content: center;
+}
+
+.stat-card {
+    position: relative;
+    width: 240px;
+    padding: 1.75rem 1rem 2.25rem;
+    background: rgba(5, 12, 25, 0.94);
+    border-radius: 24px;
+    border: 1px solid rgba(0, 200, 255, 0.18);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.38);
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+}
+
+.stat-card .circle {
+    --circle-size: 180px;
+    position: relative;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    margin: 0 auto 1.3rem;
+    background: #111b2a;
+    border-radius: 50%;
+    border: 8px solid rgba(0, 200, 255, 0.18);
+    display: grid;
+    place-content: center;
+    transition: transform 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+    color: #ffffff;
+}
+
+.stat-card .circle::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid var(--clr, #00c8ff);
+    transition: transform 0.5s ease, background 0.5s ease, opacity 0.5s ease;
+    filter: drop-shadow(0 0 10px var(--clr, #00c8ff)) drop-shadow(0 0 60px var(--clr, #00c8ff));
+    opacity: 0.2;
+}
+
+.stat-card:hover .circle {
+    transform: rotate(-3deg) scale(1.02);
+    border-color: rgba(0, 200, 255, 0.42);
+    box-shadow: 0 0 30px rgba(0, 200, 255, 0.22);
+}
+
+.stat-card:hover .circle::before {
+    transform: scale(1.06);
+    background: rgba(0, 200, 255, 0.1);
+    opacity: 0.65;
+}
+
+.circle-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.circle-value {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--clr, #00c8ff);
+    margin-top: 0.4rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+    transition-delay: 0.18s;
+}
+
+.stat-card:hover .circle-value {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: rgba(229, 246, 255, 0.78);
+}
+
+.statistics-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: rgba(16, 25, 40, 0.6);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 200, 255, 0.2);
+}
+
+.statistics-title {
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+    background: linear-gradient(135deg, #00c8ff 0%, #00ffbf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.statistics-subtitle {
+    font-size: 1rem;
+    color: rgba(229, 246, 255, 0.7);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}

@@ -1,0 +1,51 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.floating-buttons-group {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  z-index: 9999;
+}
+
+.floating-icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #00c8ff;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 200, 255, 0.7);
+  transition: transform 0.2s ease, color 0.2s ease;
+  background: none;
+  border: none;
+}
+
+.floating-icon-btn:hover {
+  transform: scale(1.1);
+  color: #00eaff;
+  text-shadow: 0 0 25px rgba(0, 234, 255, 0.9);
+}
+
+.floating-icon-btn__icon {
+  font-size: 2.5rem;
+  margin-bottom: 4px;
+  filter: drop-shadow(0 0 8px rgba(0, 200, 255, 0.6));
+}
+
+.floating-icon-btn__label {
+  font-family: 'nebula', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+}

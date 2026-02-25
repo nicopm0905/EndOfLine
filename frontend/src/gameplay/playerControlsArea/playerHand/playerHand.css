@@ -1,0 +1,146 @@
+.player-hand {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1.25rem 1.75rem;
+    border-radius: 16px;
+    background: rgba(7, 14, 32, 0.85);
+    box-shadow: 0 0 18px rgba(0, 140, 255, 0.35);
+}
+
+.player-hand--left {
+    justify-content: flex-start;
+}
+
+.player-hand--right {
+    justify-content: flex-end;
+}
+
+.player-hand--empty {
+    justify-content: center;
+    background: rgba(7, 14, 32, 0.55);
+}
+
+.player-hand__placeholder {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+}
+
+.player-hand__card {
+    all: unset;
+    width: 50px;
+    height: 80px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: transform 0.18s ease, border-color 0.18s ease,;
+    box-shadow: none;
+}
+
+.player-hand__card--selected {
+    transform: translateY(-16px) scale(1.04);
+    border-color: rgba(255, 130, 255, 0.75);
+    box-shadow: 0 0 22px rgba(255, 130, 255, 0.55);
+}
+
+.player-hand__card--north {
+    transform-origin: bottom center;
+}
+
+.player-hand__card--east {
+    transform-origin: bottom right;
+}
+
+.player-hand__card--south {
+    transform-origin: bottom center;
+}
+
+.player-hand__card--west {
+    transform-origin: bottom left;
+}
+
+.player-hand__image-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.player-hand__image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.player-hand__cards-wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.player-hand__reroll-wrapper {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.player-hand--vertical {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    height: auto;
+    width: 100%;
+    padding: 0.35rem 0.5rem;
+    background: transparent;
+    box-shadow: none;
+}
+
+.player-hand--vertical .player-hand__cards-wrapper {
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.player-hand--vertical .player-hand__card {
+    transform: none !important;
+    width: 84px;
+    height: 104px;
+    padding: 0.35rem;
+}
+
+.player-hand--vertical .player-hand__reroll-wrapper {
+    margin-left: 0.35rem;
+}
+
+.player-hand--vertical .player-hand__card--selected {
+    transform: scale(1.05);
+}
+
+.player-hand--vertical .player-hand__reroll-wrapper {
+    margin-left: 0.5rem;
+    margin-top: 0;
+}
+
+.player-hand--small .player-hand__cards-wrapper {
+    gap: 0.15rem;
+}
+.player-hand--small .player-hand__card {
+    width: 32px;
+    height: 50px;
+    padding: 0.15rem;
+}
+.player-hand--small .player-hand__image {
+    transform: scale(0.7);
+}
+.player-hand--small.player-hand--vertical {
+    gap: 0.1rem;
+    padding: 0.15rem 0.2rem;
+}

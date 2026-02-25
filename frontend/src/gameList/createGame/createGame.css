@@ -1,0 +1,102 @@
+.create-game {
+background: linear-gradient(135deg, #0f1419 0%, #1a1f3a 100%);
+color: #00c8ff;
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-family: 'Orbitron', sans-serif;
+}
+
+.create-game h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    color: #00c8ff;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.create-game form {
+    background: linear-gradient(135deg, #19222c 0%, #2b3465 100%);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 25px rgba(1, 15, 56, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+.create-game .form-label {
+    color: #00c8ff;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    display: block;
+}
+
+.create-game .form-control,
+.create-game .form-select {
+    width: 100%;
+    padding: 0.5rem 1.0rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #eeeeee;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.create-game .form-control:focus,
+.create-game .form-select:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00c8ff;
+}
+
+.create-game .form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.create-game .form-check-input {
+    accent-color: #00c8ff;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.75rem;
+}
+
+.create-game .form-check-label {
+    font-size: 0.95rem;
+    color: #00c8ff;
+}
+
+.create-game .btn-primary {
+    background-color: #00c8ff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.create-game .btn-primary:hover {
+    background-color: #00a6cc;
+}
+
+.create-game .alert-danger {
+    background-color: #ff1e1e;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+}

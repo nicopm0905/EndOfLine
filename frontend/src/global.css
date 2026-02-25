@@ -1,0 +1,54 @@
+:root{
+    --main-red-color: #c42323;
+    --main-blue-color: #2333c4;
+    --main-green-color: #23c483;
+    --green-shadow-color: rgba(46, 229, 157, 0.4);
+    --blue-shadow-color: rgba(46, 92, 229, 0.4);
+    --red-shadow-color: rgba(229, 46, 46, 0.4);
+}
+
+@font-face {
+    font-family: 'american-typewriter'; 
+    src: url('./static/fonts/American\ Typewriter\ Bold.ttf'); 
+}
+
+@font-face {
+    font-family: 'tron'; 
+    src: url('./static/fonts/TRON.TTF'); 
+}
+
+@font-face {
+    font-family: 'nebula'; 
+    src: url('./static/fonts/Nebula-Regular.otf'); 
+}
+
+* {
+    font-family: 'nebula';
+}
+/* Estilos mejorados para selects/dropdowns con mejor contraste */
+select {
+    background-color: rgba(0, 50, 80, 0.9) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(0, 200, 255, 0.5) !important;
+    font-weight: 600;
+}
+
+select:focus {
+    outline: none;
+    border-color: #00c8ff !important;
+    box-shadow: 0 0 10px rgba(0, 200, 255, 0.5) !important;
+}
+
+select option {
+    background-color: #003250 !important;
+    color: #ffffff !important;
+    padding: 10px !important;
+    font-weight: 500;
+}
+
+select option:hover,
+select option:focus,
+select option:checked {
+    background-color: #00c8ff !important;
+    color: #000000 !important;
+}

@@ -1,0 +1,38 @@
+.reroll-button {
+    background: linear-gradient(135deg, #00c8ff 0%, #0077ff 100%);
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.reroll-icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.4s ease;
+}
+
+.reroll-button:hover:not(:disabled) .reroll-icon {
+    transform: rotate(180deg);
+}
+
+.reroll-button:disabled {
+    opacity: 0.4 !important;
+    background: linear-gradient(135deg, #777 0%, #555 100%) !important;
+    cursor: not-allowed !important;
+    box-shadow: none !important;
+}
+
+.reroll-force-disabled .reroll-button {
+    opacity: 0.4 !important;
+    background: linear-gradient(135deg, #777 0%, #555 100%) !important;
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}

@@ -1,0 +1,45 @@
+.draw-deck-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.deck-pile-button {
+    width: 80px;
+    height: 110px;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.deck-pile-button:hover {
+    transform: scale(1.05);
+}
+
+.deck-pile-button:active {
+    transform: scale(0.95);
+}
+
+.solitaire-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hint-text {
+    color: #00ffcc;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

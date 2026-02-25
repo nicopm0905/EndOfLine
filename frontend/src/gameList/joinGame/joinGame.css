@@ -1,0 +1,197 @@
+.join-game-container {
+  background: linear-gradient(135deg, #0f1419 0%, #1a1f3a 100%);
+  color: #00c8ff;
+  font-family: 'Orbitron', sans-serif;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-game-container h2 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  border-bottom: 3px solid #00c8ff;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.game-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.game-card {
+  background: linear-gradient(145deg, #141a22 0%, #1e2a40 100%);
+  border: 2px solid #00c8ff33;
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.1);
+}
+
+.game-card:hover {
+  border-color: #00c8ff;
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.game-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00c8ff;
+  letter-spacing: 1px;
+}
+
+.game-details {
+  font-size: 0.95rem;
+  color: #a9c8d3;
+}
+
+.game-details span {
+  color: #00c8ff;
+}
+
+.join-button {
+  background-color: #00c8ff;
+  color: #000;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.7rem 1.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #00a6cc;
+  box-shadow: 0 0 10px #00c8ff;
+  transform: scale(1.05);
+}
+
+.empty-msg {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-top: 2rem;
+}
+
+.password-form {
+  display: flex; 
+  align-items: center;
+  gap: 0.5rem; 
+  flex: 1;
+  justify-content: flex-end; 
+}
+
+.password-form input[type="password"] {
+  background-color: #141a22; 
+  border: 2px solid #00c8ff33; 
+  border-radius: 1.5rem; 
+  color: #fff;
+  font-family: 'Orbitron', sans-serif; 
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  outline: none; 
+  transition: border-color 0.3s ease;
+  flex-grow: 1;
+  max-width: 250px; 
+}
+
+.password-form input[type="password"]::placeholder {
+  color: #a9c8d3;
+  opacity: 0.7;
+}
+
+.password-form input[type="password"]:focus {
+  border-color: #00c8ff;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.4);
+}
+
+.join-button-submit,
+.join-button-cancel {
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+  position: relative; 
+  font-size: 0; 
+  color: transparent;
+}
+
+.join-button-submit {
+  background-color: #00c8ff;
+}
+.join-button-submit:hover {
+  background-color: #00a6cc;
+  box-shadow: 0 0 10px #00c8ff;
+  transform: scale(1.1);
+}
+
+.join-button-submit::after {
+  content: '';
+  display: block;
+  width: 8px; 
+  height: 16px; 
+  border-color: #000; 
+  border-style: solid;
+  border-width: 0 4px 4px 0; 
+  
+  transform: rotate(45deg) translate(-2px, -2px);
+}
+
+.join-button-cancel {
+  background-color: #555; 
+}
+.join-button-cancel:hover {
+  background-color: #ff3b3b; 
+  transform: scale(1.1);
+}
+
+.join-button-cancel::before,
+.join-button-cancel::after {
+  content: '';
+  position: absolute; 
+  width: 20px; 
+  height: 4px;
+  background-color: #00c8ff; 
+  border-radius: 2px;
+}
+
+.join-button-cancel::before {
+  transform: rotate(45deg);
+}
+.join-button-cancel::after {
+  transform: rotate(-45deg);
+}
+
+.private-game-icon {
+  color: #ffd700; 
+  font-size: 0.85rem;
+}
